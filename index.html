@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accoordion</title>
+  <link rel="stylesheet" href="css/jquery.accordion.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body { overflow: hidden; }
+
+    #accordion > li { text-align: center; }
+    #accordion > li > a { color: #fff; text-decoration: none; border-left: 1px solid #555; border-right: 1px solid #555; background-color: #333; }
+    #accordion > li > section { background-color: #aaa; }
+  </style>
+</head>
+<body>
+  <ul id="accordion">
+    <li class="active">
+      <a href="#" class="bookmark">1</a>
+      <section>
+        <h1>Lorem ipsum</h1>
+        <p><img src="http://placehold.it/350x150" alt=""></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem, inventore cupiditate id, explicabo maiores sunt. Nihil sequi nam harum cumque soluta numquam aliquid neque itaque voluptates, ullam ipsam. Deserunt.</p>
+      </section>
+    </li>
+    <li>
+      <a href="#" class="bookmark">2</a>
+      <section>
+        <h1>Lorem ipsum</h1>
+        <p><img src="http://placehold.it/350x150" alt=""></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem, inventore cupiditate id, explicabo maiores sunt. Nihil sequi nam harum cumque soluta numquam aliquid neque itaque voluptates, ullam ipsam. Deserunt.</p>
+      </section>
+    </li>
+    <li>
+      <a href="#" class="bookmark">3</a>
+      <section>
+        <h1>Lorem ipsum</h1>
+        <p><img src="http://placehold.it/350x150" alt=""></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem, inventore cupiditate id, explicabo maiores sunt. Nihil sequi nam harum cumque soluta numquam aliquid neque itaque voluptates, ullam ipsam. Deserunt.</p>
+      </section>
+    </li>
+    <li>
+      <a href="#" class="bookmark">4</a>
+      <section>
+        <h1>Lorem ipsum</h1>
+        <p><img src="http://placehold.it/350x150" alt=""></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit autem, inventore cupiditate id, explicabo maiores sunt. Nihil sequi nam harum cumque soluta numquam aliquid neque itaque voluptates, ullam ipsam. Deserunt.</p>
+      </section>
+    </li>
+  </ul>
+  <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script src="js/jquery.accordion.js"></script>
+  <script>
+    (function($) {
+      $(function() {
+        $('#accordion').accordion();
+      });
+    })(jQuery);
+  </script>
+</body>
+</html>
